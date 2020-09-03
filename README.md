@@ -1,1 +1,1 @@
-<img src="paginate.png"/>ECHO is on.
+<img src="paginate.png"/>
