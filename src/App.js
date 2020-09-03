@@ -8,7 +8,7 @@ function App() {
 
   const [posts , setPosts] = useState([]);
 
-  const [loading , setLoading] = useState(true);
+  const [loading , setLoading] = useState(false);
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -19,7 +19,7 @@ function App() {
     const fetchPots = async() => {
       
       try {
-        //setLoading(true); // That mens when the data is not execute then the loading should be true
+        setLoading(true); // That mens when the data is not execute then the loading should be true
         const res = await axios.get('https://jsonplaceholder.typicode.com/posts')
         const data = res.data;
         setPosts(data);
